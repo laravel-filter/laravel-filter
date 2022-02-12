@@ -42,7 +42,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "laravelFilter\\filter\\UseeFilterServiceProvider"
+                "laravelFilter\\filter\\LaravelFilterServiceProvider"
             ]
         }
     },

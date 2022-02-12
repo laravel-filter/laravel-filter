@@ -5,8 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Filter\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/app" isTestSource="false" packagePrefix="youness_usee\filter\app\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/app/Console/Commands" isTestSource="false" packagePrefix="youness_usee\filter\app\Console\Commands\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/app" isTestSource="false" packagePrefix="laravelFilter\filter\app\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/app/Console/Commands" isTestSource="false" packagePrefix="laravelFilter\filter\app\Console\Commands\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />

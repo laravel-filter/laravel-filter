@@ -1,6 +1,6 @@
 <?php
 
-namespace youness_usee\filter\app;
+namespace laravelFilter\filter\app;
 
 use Closure;
 use Illuminate\Http\Request;

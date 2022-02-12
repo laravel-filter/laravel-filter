@@ -1,6 +1,6 @@
 <?php
 
-namespace youness_usee\filter\app\Console\Commands;
+namespace laravelFilter\filter\app\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

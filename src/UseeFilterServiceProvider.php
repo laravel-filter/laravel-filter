@@ -1,6 +1,6 @@
 <?php
 
-namespace youness_usee\filter;
+namespace laravelFilter\filter;
 
 use youness_usee\filter\app\Console\Commands\MakeFilter;
 use Illuminate\Support\ServiceProvider;

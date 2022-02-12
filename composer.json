@@ -19,9 +19,9 @@
     "autoload": {
         "psr-4": {
             "Filter\\": "src/",
-            "laravel-filter\\filter\\app\\Console\\Commands\\": "src/app/Console/Commands/",
-            "laravel-filter\\filter\\app\\": "src/app/",
-            "laravel-filter\\filter\\": "src/",
+            "laravelFilter\\filter\\app\\Console\\Commands\\": "src/app/Console/Commands/",
+            "laravelFilter\\filter\\app\\": "src/app/",
+            "laravelFilter\\filter\\": "src/",
             "App\\": "app/"
         },
         "classmap": [
@@ -38,7 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "laravel-filter\\filter\\UseeFilterServiceProvider"
+                "laravelFilter\\filter\\UseeFilterServiceProvider"
             ]
         }
     },

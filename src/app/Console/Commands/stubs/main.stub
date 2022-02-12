@@ -1,0 +1,47 @@
+<?php
+
+namespace App\QueryFilters;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Builder;
+use youness_usee\filter\app\Filter;
+
+class {{ class }} extends Filter
+{
+    /**
+     * request parameter, which should be filtered by this class.
+     *
+     * @var string
+     */
+    public $filterParameter = '{{ filter_parameter }}';
+
+    protected function applyType()
+    {
+        return {{ filter_type }};
+    }
+
+    protected function applyFirst()
+    {
+        //you can customize column name from here
+        return {{ first_filter_parameter }};
+    }
+
+    protected function applySecond()
+    {
+        return {{ second_filter_parameter }};
+    }
+
+    /**
+     * Apply filter query.
+     *
+     * @param mixed $value
+     * @param  \Illuminate\Database\Eloquent\Builder  $builder
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function apply($value, $builder)
+    {
+        // return query builder which will be used to apply on query.
+        return {{ query_builder }}
+    }
+}

@@ -1,0 +1,1 @@
+$builder->where($this->applyFirst(), 'LIKE' , '%' . $value .'%')

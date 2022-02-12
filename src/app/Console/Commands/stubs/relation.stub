@@ -1,0 +1,3 @@
+$builder->whereHas( {{ relation_name }} , function($q){
+                    $q->where($this->applyFirst(), $value);
+                })

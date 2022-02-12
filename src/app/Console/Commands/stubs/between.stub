@@ -1,0 +1,2 @@
+builder->where($this->applyFirst(), '>=' ,$this->request->$this->applyFirst()." 00:00:00")
+                        ->where($this->applySecond(), '<=' , $this->request->$this->applySecond()." 23:59:59")

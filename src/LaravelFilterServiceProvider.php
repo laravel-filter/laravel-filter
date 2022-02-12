@@ -1,11 +1,11 @@
 <?php
 
-namespace laravelFilter\filter;
+namespace Filter;
 
-use youness_usee\filter\app\Console\Commands\MakeFilter;
 use Illuminate\Support\ServiceProvider;
+use laravelFilter\filter\app\Console\Commands\MakeFilter;
 
-class UseeFilterServiceProvider extends ServiceProvider
+class LaravelFilterServiceProvider extends ServiceProvider
 {
     public function register()
     {

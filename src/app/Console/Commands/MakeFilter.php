@@ -1,6 +1,6 @@
 <?php
 
-namespace laravelFilter\filter\app\Console\Commands;
+namespace Filter\app\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -12,7 +12,7 @@ class MakeFilter extends Command
      *
      * @var string
      */
-    protected $signature = 'make:filter {filter} {first} {--type=} {--second=} {--relation=}';
+    protected $signature = 'make:filter {name} {column} {--type=} {--second=} {--relation=}';
 
     /**
      * The console command description.
@@ -52,11 +52,11 @@ class MakeFilter extends Command
      */
     public function handle()
     {
-        $this->filter_name = $this->argument('filter');
+        $this->filter_name = $this->argument('name');
         $this->type = $this->option('type');
         $this->second = $this->option('second');
         $this->relation = $this->option('relation');
-        $this->first = $this->argument('first');
+        $this->first = $this->argument('column');
         $this->generateClass();
     }
 
@@ -86,9 +86,9 @@ class MakeFilter extends Command
      */
     private function generateFile()
     {
-        $file = "{$this->classNaming($this->type, $this->filter_name, $this->second)}.php";
+        $fileName = $this->filter_name . '.php';
         $path = app_path();
-        $file = $path.DIRECTORY_SEPARATOR."QueryFilters".DIRECTORY_SEPARATOR.$file;
+        $file = $path.DIRECTORY_SEPARATOR."QueryFilters".DIRECTORY_SEPARATOR.$fileName;
         $composerDir = $path.DIRECTORY_SEPARATOR."QueryFilters";
 
         if (!is_dir($composerDir)) {

@@ -3,7 +3,7 @@
 namespace Filter;
 
 use Illuminate\Support\ServiceProvider;
-use laravelFilter\filter\app\Console\Commands\MakeFilter;
+use Filter\app\Console\Commands\MakeFilter;
 
 class LaravelFilterServiceProvider extends ServiceProvider
 {

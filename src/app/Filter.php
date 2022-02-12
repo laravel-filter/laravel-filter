@@ -10,13 +10,6 @@ abstract class Filter
 {
 
     /**
-     * request parameter, which should be filtered by this class.
-     *
-     * @var string
-     */
-    public $filterParameter;
-
-    /**
      * @var Request
      */
     public $request;
